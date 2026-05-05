@@ -34,9 +34,9 @@ export EDITOR="nvim"
 export GOPRIVATE=github.com/
 
 # NNN configuration
-export NNN_COLORS="0000"
+# export NNN_COLORS="0000"
 export NNN_FCOLORS="0000"
-export LS_COLORS=""
+# export LS_COLORS=""
 export NNN_ICONS=1
 export NNN_ICONLOOKUP=1
 export NNN_USE_EDITOR=1
