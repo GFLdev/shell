@@ -47,5 +47,5 @@ eval $(keychain --eval --quiet id_ed25519)
 
 # Tmux
 if [ -z "$TMUX" ] && [ -n "$PS1" ] && [[ "$(tty)" == /dev/pts/* ]]; then
-    exec tmux new-session -A -s main
+    exec tmux
 fi
