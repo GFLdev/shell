@@ -19,6 +19,8 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5c6773"
 # Aliases
 alias ls='ls --color=auto'
 alias ll='ls -la'
+alias v='vim'
+alias nv='nvim'
 
 # Prompt
 eval "$(starship init zsh)"
@@ -28,6 +30,13 @@ bindkey "^[[3~" delete-char
 
 # PATH
 export PATH="$HOME/.local/bin:$PATH"
+export EDITOR="nvim"
+export GOPRIVATE=github.com/
 
-# Go private
-GOPRIVATE=github.com/
+# SSH
+eval $(keychain --eval --quiet id_ed25519)
+
+# Tmux
+if [[ -z "$TMUX" ]] && [ "$TERM" != "screen" ]; then
+    exec tmux
+fi
