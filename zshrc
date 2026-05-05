@@ -28,10 +28,19 @@ eval "$(starship init zsh)"
 # Delete key
 bindkey "^[[3~" delete-char
 
-# PATH
+# Variables
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
 export GOPRIVATE=github.com/
+
+# NNN configuration
+export NNN_COLORS="0000"
+export NNN_FCOLORS="0000"
+export LS_COLORS=""
+export NNN_ICONS=1
+export NNN_ICONLOOKUP=1
+export NNN_USE_EDITOR=1
+export NNN_OPTS="ade"
 
 # SSH
 eval $(keychain --eval --quiet id_ed25519)
