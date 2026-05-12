@@ -22,5 +22,12 @@ setxkbmap us -variant intl
 gentoo-pipewire-launcher &
 pipewire-pulse &
 
+# PATH
+export PATH="$HOME/.local/bin:$PATH"
+
+# Picom
+killall -q picom
+picom --daemon &
+
 # dwm
 exec dbus-launch --exit-with-session dwm
