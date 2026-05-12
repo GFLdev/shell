@@ -32,6 +32,7 @@ bindkey "^[[3~" delete-char
 export PATH="$HOME/.local/bin:$PATH"
 export EDITOR="nvim"
 export GOPRIVATE=github.com/
+export TERM=st-256color
 
 # NNN configuration
 # export NNN_COLORS="0000"
