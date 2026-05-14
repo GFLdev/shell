@@ -2,9 +2,9 @@
 
 ### geometry
 width = 320
-height = 300
+height = (0, 300)
 origin = top-right
-offset = 20x20
+offset = (4, 26)
 gap_size = 8
 
 ### transparency
@@ -26,7 +26,7 @@ format = <b>%s</b>\n%b
 
 ### icons
 enable_recursive_icon_lookup = true
-icon_theme = Papirus-Dark
+icon_theme = YAMIS
 
 ### behavior
 follow = mouse
