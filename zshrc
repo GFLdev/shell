@@ -29,7 +29,7 @@ eval "$(starship init zsh)"
 bindkey "^[[3~" delete-char
 
 # Variables
-export PATH="$HOME/.local/bin:$PATH"
+export PATH="$HOME/.local/bin:$HOME/go/bin:$PATH"
 export EDITOR="nvim"
 export GOPRIVATE=github.com/
 export TERM=st-256color
