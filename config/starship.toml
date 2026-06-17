@@ -8,14 +8,33 @@ $git_branch\
 $git_status\
 $c\
 $cpp\
+$crystal\
+$dart\
+$elixir\
+$erlang\
+$gleam\
 $golang\
+$haskell\
+$java\
+$julia\
+$kotlin\
+$lua\
+$nim\
 $nodejs\
+$ocaml\
+$perl\
 $php\
 $python\
+$raku\
 $ruby\
 $rust\
-$java\
-$lua\
+$scala\
+$swift\
+$terraform\
+$typst\
+$vlang\
+$zig\
+$nix_shell\
 $docker_context\
 $cmd_duration\
 $line_break\
@@ -40,7 +59,7 @@ truncate_to_repo = true
 
 # GIT
 [git_branch]
-symbol = " "
+symbol = " "
 style = "fg_dim"
 format = "[$symbol$branch]($style) "
 
@@ -56,7 +75,32 @@ style = "fg_soft"
 format = "[$symbol]($style) "
 
 [cpp]
-symbol = ""
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[crystal]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[dart]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[elixir]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[erlang]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[gleam]
+symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
@@ -65,23 +109,68 @@ symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
+[haskell]
+symbol = "󰲒"
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[java]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[julia]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[kotlin]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[lua]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[nim]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
 [nodejs]
-symbol = ""
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[ocaml]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[perl]
+symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
 [php]
-symbol = ""
+symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
 [python]
-symbol = ""
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[raku]
+symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
 [ruby]
-symbol = ""
+symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
@@ -90,18 +179,43 @@ symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
-[java]
-symbol = ""
+[scala]
+symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
-[lua]
-symbol = ""
+[swift]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[terraform]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[typst]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[vlang]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[zig]
+symbol = ""
+style = "fg_soft"
+format = "[$symbol]($style) "
+
+[nix_shell]
+symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
 [docker_context]
-symbol = ""
+symbol = ""
 style = "fg_soft"
 format = "[$symbol]($style) "
 
@@ -109,10 +223,10 @@ format = "[$symbol]($style) "
 [cmd_duration]
 min_time = 500
 style = "fg_soft"
-format = "[($duration)]($style) "
+format = "[$duration]($style) "
 
 # PROMPT
 [character]
-success_symbol = "[›](fg)"
-error_symbol = "[›](fg)"
-vicmd_symbol = "[‹](fg_dim)"
+success_symbol = "[󰁔](fg)"
+error_symbol = "[󰁔](fg)"
+vicmd_symbol = "[󰁍](fg_dim)"
