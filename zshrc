@@ -45,3 +45,8 @@ export NNN_OPTS="ade"
 
 # SSH
 eval $(keychain --eval --quiet id_ed25519)
+
+# Pyenv
+export PYENV_ROOT="$HOME/.pyenv"
+[[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv virtualenv-init -)"
