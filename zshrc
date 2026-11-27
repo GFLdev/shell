@@ -25,7 +25,7 @@ alias ls='ls --color=auto'
 alias ll='ls -la'
 alias v='vim'
 alias nv='nvim'
-alias hypr='ck-launch-session start-hyprland'
+alias hypr='ck-launch-session dbus-run-session start-hyprland'
 alias doas='doas '            # trailing space lets aliases expand after doas (e.g. `doas nv`)
 
 # Navigation: `cd hypr` / `cd kitty` / `cd dwm` work from anywhere
@@ -135,7 +135,7 @@ _alias_help() {
     "ports|cd to the ports tree|ports"
     "port|make in a port directory|port multimedia/pipewire reinstall clean"
     "#Hyprland"
-    "hypr|Start Hyprland in a ConsoleKit session|hypr"
+    "hypr|Start Hyprland in a ConsoleKit and D-Bus session|hypr"
     "hr|Reload Hyprland config|hr"
     "hc|Edit hyprland.lua|hc"
     "#Apps"
