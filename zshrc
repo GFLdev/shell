@@ -9,11 +9,11 @@ zstyle :compinstall filename '/home/gfl/.zshrc'
 
 autoload -Uz compinit promptinit
 compinit
-promptinit; prompt gentoo
+# promptinit; prompt gentoo
 
 # Plugins
-source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
-source $HOME/Repos/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=#5c6773"
 
 # Aliases
@@ -50,3 +50,6 @@ eval $(keychain --eval --quiet id_ed25519)
 export PYENV_ROOT="$HOME/.pyenv"
 [[ -d $PYENV_ROOT/bin ]] && export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv virtualenv-init -)"
+
+# Hack: stop claude clode from freezing at 49 seconds
+export BUN_JSC_useConcurrentGC=0
